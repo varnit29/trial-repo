@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="VarnitSh_HelloWorld::helloworld" title="Hello World" module="VarnitSh_HelloWorld" sortOrder="51" resource="VarnitSh_HelloWorld::helloworld"/>
+        <add id="VarnitSh_HelloWorld::post" title="Manage Posts" module="VarnitSh_HelloWorld" sortOrder="10" action="varnitsh_helloworld/post" resource="VarnitSh_HelloWorld::post" parent="VarnitSh_HelloWorld::helloworld"/>
+        <add id="VarnitSh_HelloWorld::hello_configuration" title="Configuration" module="VarnitSh_HelloWorld" sortOrder="99" parent="VarnitSh_HelloWorld::helloworld" action="adminhtml/system_config/edit/section/helloworld" resource="VarnitSh_HelloWorld::helloworld_configuration"/>
+    </menu>
+</config>
